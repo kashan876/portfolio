@@ -1,0 +1,350 @@
+body {
+    background-color: #1425;
+    padding: 0px;
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Helper Classes start here*/
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+}
+.row {
+    display: flex;
+}
+.col {
+    display: inherit;
+    flex: 1;
+}
+.sec-sv {
+    padding: 100px 0px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 30px;
+    border: 1px solid;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: transparent;
+}
+.btn-primary:hover {
+    background-color: blue;
+    color: red;
+    border-color: blue;
+}
+.btn-primary:focus {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.btn-secondary {
+    background-color: pink;
+    color: red;
+    border-color: pink;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    border-color: #333;
+}
+
+.btn-secondary:focus {
+    background-color: blue;
+    border-color: blue;
+    color: #fff;
+}
+
+
+/* Helper Classes end here*/
+
+
+/* slider section start here */
+
+#section-box {
+    height: 100vh;
+    background-image: url(../images/snow.jpg);
+}
+#section-box .overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+#.section-box .container {
+    display: flex;
+    height: 100%; 
+}
+
+#section-box .container .row {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-box .container .row .content {
+    width: 40%;
+    text-align: center;
+    /*align-items: center;*/
+}
+
+#section-box .container .row .content h1 {
+    text-transform: uppercase;
+    font-size: 39px;
+    letter-spacing: 1px;
+    /*margin: 20px 0px;*/
+    font-weight: 550;
+}
+
+#section-box .container .row .content h2 {
+    text-transform: capitalize;
+    font-size: 45px;
+    letter-spacing: 3px;
+    margin: 0px;
+
+}
+
+#section-box .container .row .content p {
+    letter-spacing: 1px;
+    padding: 20px 10px;
+}
+
+/* Slider section end here */
+
+/* Side Box starts here*/
+.side-box {
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    width: 30px;
+    height: 30px;
+    background-color: pink;
+}
+.side-box i{
+    padding: 6px
+}
+/* Side Box ends here*/
+
+/* About Section Start here */
+
+#about-me .row{
+    display: flex
+}
+#about-me .row .col{
+    width: 47%;
+    justify-content: space-between;
+}
+#about-me .aboutme-content .social-icons ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+}
+#about-me .aboutme-content .social-icons ul li {
+    width: 30px;
+    height: 30px;
+    background-color:white;
+    border-radius: 50%;
+    border: 1px solid black;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 15px;
+}
+#about-me .aboutme-content .social-icons ul li a i {
+    padding-top: 6px;
+    color: black
+}
+
+/* About Section end here */
+
+/*my section starts here*/
+
+#my-sec{
+    background-color: #1425
+}
+#my-sec .container{
+    /*width: 100%;*/
+    /*display: flex;*/
+}
+#my-sec .container .row{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#my-sec .container .row .my-content{
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+#my-sec .container .row .my-content h2{
+    font-size: 40px;
+    font-weight: 400;
+
+}
+#my-sec .container .row .my-content p{
+    /*font-weight: 100;*/
+    font-size: 15px
+    
+}
+#my-sec .content-boxes{
+    margin: 30px;
+    display: flex
+}
+#my-sec .content-boxes .boxes{
+    border: 2px solid black;
+    width: 30%;
+    justify-content: space-around;
+
+}
+#my-sec .content-boxes .boxes a i{
+    font-size: 40px;
+    padding-left: 190px;
+    padding-top: 15px;
+    padding-bottom: 15px
+
+    /*margin: 0 auto!important*/
+    
+}
+#my-sec .content-boxes .boxes h2{
+    text-align: center
+}
+#my-sec .content-boxes .boxes .design{
+    height: 4px;
+    width: 80px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 10px
+    
+}
+#my-sec .content-boxes .boxes p{
+    text-align: center;
+}
+
+/*hovers section starts here*/
+
+#hovers{
+	background-color: white;
+}
+
+#hovers .box{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+.box:before,
+.box:after{
+    content: "";
+    background: #34495e;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    transition: all 0.35s 0s ease-out;
+}
+.box:hover:before{ bottom: 0; }
+.box:after{
+    opacity: 0.8;
+    bottom: 0;
+    top: 100%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: all 0.35s 0.2s ease-in;
+}
+.box:hover:after{ top: 25%; }
+.box img{
+    width: 100%;
+    height: auto;
+}
+.box .box-content{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-55%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transition: all 0.35s 0.5s ease;
+}
+.box:hover .box-content{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40%);
+}
+.box .title{
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.box .title:after{
+    content: '';
+    height: 1px;
+    width: 100px;
+    margin: 5px auto 3px;
+    border-bottom: 1px dashed #fff;
+    display: block;
+    clear: both;
+}
+.box .post{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    z-index: 2;
+}
+.box .icon li{
+    margin: 0 3px;
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.4s ease 0.5s;
+}
+.box .icon li:nth-child(2){ transition-delay: 0.7s; }
+.box:hover .icon li{ opacity: 1; }
+.box .icon li a{
+    color: #333;
+    background-color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 31px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.box .icon li a:hover{ box-shadow: 3px 3px rgba(255,255,255,0.5); }
+@media only screen and (max-width:990px){
+    .box{ margin: 0 0 30px; }
+}
+License Terms
+
+/*hovers section ends here*/
+
+@media(max-width: 992px ){
+    .row {
+        flex-direction: column;
+    }
